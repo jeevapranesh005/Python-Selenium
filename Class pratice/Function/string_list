@@ -1,0 +1,48 @@
+#list creation by using constructor
+t= list()
+str="aeiou"
+t =list(str)
+print(t)
+
+m = [10,1,11,12,55]
+del m[1]
+print(m)
+del m
+print(m)
+
+
+#traversal using range
+
+m = [10,1,11,12,55]
+for i in range(len(m)):
+    print(m[i])
+
+#list sort
+list= ["hello","orange",str(1),"bike","jeep"]
+list.sort()   #assending 
+print(list)
+list.sort(reverse=True)    #decending order
+print(list)
+
+
+list1=[3,6,44,55,8,10]
+list1.sort()
+print(list1)
+list1.sort(reverse=True)
+print(list1)
+
+
+#sorted -- create a newlist and store the sored list 
+list2 =[33,55,44,2,79]
+list3=sorted(list2)
+print(list3)
+
+
+t=[1,2,3,4]
+t1=t.copy()
+print(t1)
+
+print(id(t))
+print(id(t1))
+
+

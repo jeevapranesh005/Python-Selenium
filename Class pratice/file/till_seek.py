@@ -1,0 +1,6 @@
+myobj= open("myfile.txt","r+")
+myobj.write("hello")
+print(myobj.tell())
+myobj.seek(2)
+data = myobj.read()
+print(data)
