@@ -23,4 +23,10 @@ Jenkins (Windows agent) tips:
 %WORKSPACE%\run_scripts\run_controlflow_examples.bat
 ```
 
+ - To run the exception handling examples, use:
+
+```
+%WORKSPACE%\run_scripts\run_exception_examples.bat
+```
+
  - Non-interactive: these scripts use stdin redirection (`<` or piping via `type`) so they work in Jenkins without a console.
