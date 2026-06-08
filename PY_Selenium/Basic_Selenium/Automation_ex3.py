@@ -6,7 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
-from soft_assert import SoftAssert
 
 driver = webdriver.Chrome()
 
@@ -29,6 +28,5 @@ loginBTN.click()
 print("clicked")
 
 Error= wait.until(EC.visibility_of_element_located((By.XPATH,"//p[text()='Your email or password is incorrect!']"))).text
-
-sa = SoftAssert()
+print(Error)
 
