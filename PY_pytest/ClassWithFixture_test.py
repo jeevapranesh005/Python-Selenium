@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("setup_and_teardown")
 class TestSearch:
     def test_valid(self):
         action = ActionChains(self.driver)
