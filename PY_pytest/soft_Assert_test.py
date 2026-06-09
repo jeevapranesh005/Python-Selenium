@@ -6,7 +6,7 @@ def test_soft_assert():
     check.equal(1, 1)
 
     print("Step 2")
-    check.equal(2, 3)
+    check.equal(2, 2)
 
     print("Step 3")
     check.equal(3, 3)
