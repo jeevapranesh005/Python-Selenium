@@ -7,12 +7,13 @@ from read_config import get_config
 @pytest.mark.usefixtures("setup_and_teardown")
 class Testsearch:
 
-    search1 = get_config("search term","valid")
-    search_invalid = get_config("search term","invalid")
+   
 
     @pytest.mark.order(3)
     @pytest.mark.valid
     def test_validproduct(self):
+        search1 = get_config("search term","valid")
+        search_invalid = get_config("search term","invalid")
         self.driver.find_element(By.XPATH,"//input[@placeholder='Search']").send_keys(self.search1)
 
         self.driver.find_element(By.XPATH,"//button[@class='btn btn-default btn-lg']").click()

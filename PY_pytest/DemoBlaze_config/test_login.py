@@ -14,10 +14,11 @@ from read_config import get_config
 @pytest.mark.usefixtures("setup_and_teardown")
 class Testsearch:
 
-    name = get_config("login","username")
-    password = get_config("login","password")
+    
 
     def test_login(self):
+        name = get_config("login","username")
+        password = get_config("login","password")
         wait=WebDriverWait(self.driver,10)
         self.driver.find_element(By.ID,"login2").click()
         username=wait.until(EC.visibility_of_element_located((By.ID,"loginusername")))
