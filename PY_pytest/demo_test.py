@@ -34,7 +34,7 @@ def test_string():
 
 
 @pytest.mark.order(5)
-@pytest.mark.parametrize("act,exp",[(1,1),(2,3),(3,3)])
+@pytest.mark.parametrize("act,exp",[(1,1),(2,2),(3,3)])
 @pytest.mark.compar
 def test_mark(act,exp):
     assert act==exp

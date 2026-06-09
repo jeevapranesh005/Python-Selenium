@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_login.py:30 user search the product
+[32mINFO    [0m root:test_login.py:33 the user seen the product

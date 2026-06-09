@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_login.py:20 Clicking the My account
+[32mINFO    [0m root:test_login.py:24 Enter the email and password
+[32mINFO    [0m root:test_login.py:26 login the user is successfull

@@ -31,7 +31,7 @@ class TestLogin1:
         self.wait.until(EC.visibility_of_element_located((By.XPATH,"//input[@placeholder='Search']"))).send_keys(product)
         self.driver.find_element(By.XPATH,"//span[@class='input-group-btn']").click()
         self.logger.info("the user seen the product")
-        time.sleep(10)
+        
 
         
 
