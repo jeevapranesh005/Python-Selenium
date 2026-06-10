@@ -15,4 +15,4 @@ username.send_keys("TamilKumar")
 password=d.find_element(locate_with(By.TAG_NAME,"input").below(username))
 password.send_keys("Kiot1234")
 cancel=d.find_element(By.XPATH,"(//button[text()='Close'])[3]")
-d.find_element(locate_with(By.TAG_NAME,"button").near(cancel)).click()+
+d.find_element(locate_with(By.TAG_NAME,"button").near(cancel)).click()
