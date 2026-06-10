@@ -1,10 +1,14 @@
-import pytest
+from os import name
 
+import pytest
+@pytest.mark.dependency(name="sample1")
 @pytest.mark.regression
-@pytest.mark.order(3)
+@pytest.mark.order(1)
 def test_sample1():
     print("sample1")
 
+
+@pytest.mark.dependency(depends=["sample1"])
 @pytest.mark.regression
 @pytest.mark.order(2)
 def test_sample2():
@@ -15,9 +19,10 @@ def test_sample2():
 
 
 @pytest.mark.smoke
-@pytest.mark.order(1)
+@pytest.mark.order(3)
 def test_sample3():
     x=5
+
     y=10
     assert x<y
     print("sample3")

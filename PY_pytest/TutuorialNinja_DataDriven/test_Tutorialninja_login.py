@@ -23,6 +23,8 @@ class TestLogin1:
         self.wait.until(EC.visibility_of_element_located((By.XPATH,"//input[@name='password']"))).send_keys(password)
         self.logger.info("Enter the email and password")
         self.wait.until(EC.visibility_of_element_located((By.XPATH,"//input[@value='Login']"))).click()
+        loginText = self.wait.until(EC.visibility_of_element_located((By.XPATH,"//h2[text()='My Account']"))).text
+        assert loginText =="My Account"
         self.logger.info("login the user is successfull")
     @pytest.mark.search
     @pytest.mark.parametrize("product",ExcelReader.get_data(r"D:\python selenium-D\PY_pytest\TutuorialNinja_DataDriven\Excel\Book1.xlsx","search"))
@@ -31,7 +33,10 @@ class TestLogin1:
         self.wait.until(EC.visibility_of_element_located((By.XPATH,"//input[@placeholder='Search']"))).send_keys(product)
         self.driver.find_element(By.XPATH,"//span[@class='input-group-btn']").click()
         self.logger.info("the user seen the product")
-        
+     
 
+        count=self.wait.until(EC.visibility_of_element_located((By.XPATH,"//div[@class='product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12']")))
+        print(len(count))
+        
         
 
