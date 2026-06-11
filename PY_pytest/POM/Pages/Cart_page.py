@@ -14,10 +14,10 @@ class cart:
     cart=(By.XPATH,"//a[text()='Cart']")
     placeOrder=(By.XPATH,"//button[@data-toggle='modal']")
     def addToCart(self):
-        self.wait.until(EC.visibility_of_element_located((self.addTocat))).click()
+        self.wait.until(EC.element_to_be_clickable((self.addTocat))).click()
         self.wait.until(EC.alert_is_present())
         self.driver.switch_to.alert.accept()
-        self.wait.until(EC.visibility_of_element_located((self.cart))).click()
-        self.wait.until(EC.visibility_of_element_located((self.placeOrder)))
+        self.wait.until(EC.element_to_be_clickable((self.cart))).click()
+        self.wait.until(EC.element_to_be_clickable((self.placeOrder)))
 
     

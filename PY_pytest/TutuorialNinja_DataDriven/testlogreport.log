@@ -56,3 +56,10 @@
 2026-06-10 10:24:38 - INFO - the user seen the product
 2026-06-10 10:24:56 - INFO - user search the product
 2026-06-10 10:24:57 - INFO - the user seen the product
+2026-06-11 07:24:42 - WARNING - Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2026-06-11 07:25:08 - INFO - Clicking the My account
+2026-06-11 07:25:09 - INFO - Enter the email and password
+2026-06-11 07:25:32 - INFO - user search the product
+2026-06-11 07:25:33 - INFO - the user seen the product
+2026-06-11 07:25:39 - INFO - user search the product
+2026-06-11 07:25:39 - INFO - the user seen the product
